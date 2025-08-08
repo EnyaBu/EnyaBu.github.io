@@ -1,24 +1,94 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-.container {
-  padding: 50px;
+nav {
+  background-color: #333;
+  padding: 10px 0;
 }
 
-#site-name {
-  color: #333;
-  font-size: 2.5em;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-#main-image {
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.tab {
+  padding: 40px 20px;
+}
+
+img {
   margin-top: 20px;
   width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.project-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.project-description h2 {
+  margin-top: 0;
+}
+
+.project-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-link:hover .project-box {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
 }

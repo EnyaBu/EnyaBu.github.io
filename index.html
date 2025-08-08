@@ -7,13 +7,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 id="site-name">Welcome to My Website!</h1>
-      <img
-        id="main-image"
-        src="C:\Users\enyab\EnyaBu.github.io\Images\Enya_Selfie.jpeg"
-        alt="Placeholder Image"
-      />
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showTab('about')">About</a></li>
+        <li><a href="#" onclick="showTab('projects')">Projects</a></li>
+        <li><a href="mailto:enya.f.bullard@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="about" class="tab">
+      <h1>Welcome to My Website!</h1>
+      <img src="Images/Enya_Selfie.jpeg" alt="Placeholder Image" />
+      <p class="about-text">
+        Hi! I'm someone passionate about building thoughtful technology that
+        supports people. I'm especially interested in human-computer interaction
+        and using AI responsibly to enhance everyday life. I love designing,
+        learning, and making an impact through research and code.
+      </p>
+    </div>
+
+    <div id="projects" class="tab" style="display: none">
+      <h1>My Projects</h1>
+
+      <a
+        href="https://jumpstart-2024.github.io/react-3d-project/"
+        target="_blank"
+        class="project-link"
+      >
+        <div class="project-box">
+          <div class="project-description">
+            <h2>3D Website</h2>
+            <p>
+              This is a project for one of my first internships! I built a 3D
+              website for the Freedom Company and the Vanderbilt Fab Lab. I was
+              able to use Three.js to create this awesome website!
+            </p>
+          </div>
+          <div class="project-image">
+            <img src="Images/3D_Web.png" alt="Project Preview" />
+          </div>
+        </div>
+      </a>
     </div>
 
     <script src="script.js"></script>

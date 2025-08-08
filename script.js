@@ -1,4 +1,11 @@
-// This script just logs to the console when the image loads
-document.getElementById("main-image").addEventListener("load", () => {
-  console.log("Image loaded successfully!");
-});
+function showTab(tabId) {
+  // Hide all tabs
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach((tab) => (tab.style.display = "none"));
+
+  // Show selected tab
+  const activeTab = document.getElementById(tabId);
+  if (activeTab) {
+    activeTab.style.display = "block";
+  }
+}
