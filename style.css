@@ -52,6 +52,13 @@ img {
   color: #555;
 }
 
+.research-text {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1em;
+  color: #555;
+}
+
 .project-box {
   display: flex;
   justify-content: center;
@@ -91,4 +98,10 @@ img {
 .project-link:hover .project-box {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   transform: scale(1.02);
+}
+
+.web-link {
+  color: brown;
+  background-color: transparent;
+  text-decoration: none;
 }
