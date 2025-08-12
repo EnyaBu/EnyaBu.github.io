@@ -17,14 +17,21 @@
     </nav>
 
     <div id="about" class="tab">
-      <h1>Welcome to My Website!</h1>
-      <img src="Images/Enya_Selfie.jpeg" alt="Placeholder Image" />
-      <p class="about-text">
-        Hi! I'm someone passionate about building thoughtful technology that
-        supports people. I'm especially interested in human-computer interaction
-        and using AI responsibly to enhance everyday life. I love designing,
-        learning, and making an impact through research and code.
-      </p>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="Images/Enya_Selfie.jpeg" alt="Enya Bullard" />
+        </div>
+        <div class="about-text-content">
+          <h1>Welcome, Friend! <span>👋</span></h1>
+          <p>
+            Hi! I'm Enya, and I'm passionate about building thoughtful
+            technology that supports people. I'm especially interested in
+            human-computer interaction and using AI responsibly to enhance
+            everyday life. I love designing, learning, and making an impact
+            through research and code.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div id="projects" class="tab" style="display: none">
@@ -39,9 +46,9 @@
           <div class="project-description">
             <h2>3D Website</h2>
             <p>
-              This is a project for one of my first internships! I built a 3D
-              website for the Freedom Company and the Vanderbilt Fab Lab. I was
-              able to use Three.js to create this awesome website!
+              This was a project during one of my first internships! I built a
+              3D website for the Freedom Company and the Vanderbilt Fab Lab. I
+              used Three.js to create this awesome website!
             </p>
           </div>
           <div class="project-image">
@@ -60,7 +67,7 @@
             <h2>Snake Game Recreation</h2>
             <p>
               During my time at IG, I recreated the snake game in easy68k
-              assembly. Feel free to clone and play!
+              assembly. Feel free to clone it and play!
             </p>
           </div>
           <div class="project-image">
@@ -79,10 +86,10 @@
             <h2>Arrowz Notes App</h2>
             <p>
               I was a founding technical lead for a student-run startup at
-              Vanderbilt. This app is to promote guided note taking for mental
-              health, backed by research. I designed and made the interface
-              using React Native and Expo, and helped with brainstorming for our
-              product! (Peek me at the top!)
+              Vanderbilt. This app promotes guided note-taking for mental
+              health, backed by research. I designed and built the interface
+              using React Native and Expo, and helped brainstorm ideas for our
+              product! (Peek at me at the top!)
             </p>
           </div>
           <div class="project-image">
@@ -95,47 +102,47 @@
     <div id="research" class="tab" style="display: none">
       <h1>My Research</h1>
       <p class="research-text">
-        My research interests are the following: Human-Computer Interaction,
-        Artificial Intelligence, Machine Learning, Natural Language Processing,
-        Deep Learning, Neural Networks, Time Series Analysis.
+        My research interests include Human-Computer Interaction, Artificial
+        Intelligence, Machine Learning, Natural Language Processing, Deep
+        Learning, Neural Networks, and Time Series Analysis.
       </p>
       <p class="research-text">
-        To chase this path, I worked in the
+        To pursue this path, I worked in the
         <a href="https://stirlab.org/" class="web-link"
           >Socio-Technical Interaction Research Lab</a
         >
-        under Dr. Pamela Wisniewski studying HCI and how teens interact on
-        social media (and how we can keep them safe). I worked at
+        under Dr. Pamela Wisniewski, studying HCI and how teens interact on
+        social media — and how we can keep them safe. I also worked at the
         <a href="https://lab.vanderbilt.edu/rasl/" class="web-link"
           >Robotics and Autonomous Systems Laboratory</a
         >
-        under Dr. Nilanjan Sarkar where I continued my HCI research and where I
-        also dabbled in Machine Learning.
+        under Dr. Nilanjan Sarkar, where I continued my HCI research and
+        explored Machine Learning.
       </p>
 
       <img src="Images/Vandy Research Fair.png" alt="Research fair" />
       <p class="research-text">
-        I led research sessions and participant interviews for our HCI research
-        project, which evaluated the usability and effectiveness of safety tools
-        and nudges for minors on social media platforms. I also recruited 20+
-        teen participants for our research study by contacting schools and using
-        social media, and ssisted in preparing and modifying IRB protocols to
-        ensure ethical research practices involving minors. Here I am, at the
-        Vanderbilt Undergraduate Research Fair!
+        I led research sessions and participant interviews for our HCI project,
+        which evaluated the usability and effectiveness of safety tools and
+        nudges for minors on social media platforms. I recruited 20+ teen
+        participants for our study by contacting schools and using social media,
+        and assisted in preparing and modifying IRB protocols to ensure ethical
+        research practices involving minors. Here I am at the Vanderbilt
+        Undergraduate Research Fair!
       </p>
 
       <img src="Images/HCI SVs.jpg" alt="Research fair" />
       <p class="research-text">
-        I presented my paper "Enhancing athletic performance through AI: An
-        iterative prompt engineering approach for LLM-based coaching feedback"
+        I presented my paper "Enhancing Athletic Performance through AI: An
+        Iterative Prompt Engineering Approach for LLM-Based Coaching Feedback"
         at HCI International 2025! I had the wonderful opportunity to work as a
-        student volunteer as well, and had a great experience in Sweden. In
+        student volunteer as well and had a great experience in Sweden. In
         addition to prompt engineering an LLM coach, I also studied neural
-        networks, specifically siamese neural networks to detect the differences
+        networks (specifically Siamese neural networks) to detect differences
         between a professional's movements compared to a novice's.
       </p>
 
-      <h2>Check Out My Works!</h2>
+      <h1 style="padding-top: 40px">Check Out My Works!</h1>
 
       <a
         href="https://link.springer.com/chapter/10.1007/978-3-031-94171-9_22"
@@ -145,12 +152,27 @@
         <div class="project-box">
           <div class="project-description">
             <h2>
-              Enhancing athletic performance through AI: An iterative prompt
-              engineering approach for LLM-based coaching feedback
+              Enhancing Athletic Performance through AI: An Iterative Prompt
+              Engineering Approach for LLM-Based Coaching Feedback
             </h2>
           </div>
           <div class="project-image">
-            <img src="Images/Paper.png" alt="Project Preview" />
+            <img src="Images/HCI_Paper.png" alt="Project Preview" />
+          </div>
+        </div>
+      </a>
+
+      <a
+        href="https://www.kaggle.com/code/enyabullard/siamese-network-motion/edit"
+        target="_blank"
+        class="project-link"
+      >
+        <div class="project-box">
+          <div class="project-description">
+            <h2>Siamese Model for Motion Analysis</h2>
+          </div>
+          <div class="project-image">
+            <img src="Images/Graph.png" alt="Project Preview" />
           </div>
         </div>
       </a>
