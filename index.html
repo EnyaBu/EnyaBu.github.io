@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Enya's Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#" onclick="showTab('about')">About</a></li>
-        <li><a href="#" onclick="showTab('projects')">Projects</a></li>
-        <li><a href="#" onclick="showTab('research')">Research</a></li>
-        <li><a href="mailto:enya.f.bullard@gmail.com">Contact</a></li>
-      </ul>
-    </nav>
 
-    <div id="about" class="tab">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enya's Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Floating Minimal Navigation -->
+  <nav class="floating-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="mailto:enya.f.bullard@gmail.com">Contact</a>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div class="content-wrapper">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
       <div class="about-container">
         <div class="about-image">
           <img src="Images/Enya_Selfie.jpeg" alt="Enya Bullard" />
         </div>
         <div class="about-text-content">
-          <h1>Welcome, Friend! <span>👋</span></h1>
+          <h1>Welcome!</h1>
           <p>
             Hi! I'm Enya, and I'm passionate about building thoughtful
             technology that supports people. I'm especially interested in
@@ -32,23 +36,24 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="projects" class="tab" style="display: none">
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
       <h1>My Projects</h1>
 
-      <a
-        href="https://jumpstart-2024.github.io/react-3d-project/"
-        target="_blank"
-        class="project-link"
-      >
+      <a href="https://jumpstart-2024.github.io/react-3d-project/" target="_blank" class="project-link">
         <div class="project-box">
           <div class="project-description">
             <h2>3D Website</h2>
             <p>
-              This was a project from one of my first internships! I built a 3D
-              website for the Freedom Company and the Vanderbilt Fab Lab, using
-              Three.js to bring it to life.
+              This was a project from one of my first internships. I built an
+              interactive 3D website for the Freedom Company and the
+              Vanderbilt Fab Lab using Three.js and React. The site features
+              custom 3D models, dynamic lighting, and interactive navigation
+              that allows users to explore spatial environments. This project
+              demonstrates computational approaches to immersive web
+              experiences and user engagement through spatial design.
             </p>
           </div>
           <div class="project-image">
@@ -57,17 +62,18 @@
         </div>
       </a>
 
-      <a
-        href="https://github.com/EnyaBu/Assembly-Snake-Game"
-        target="_blank"
-        class="project-link"
-      >
+      <a href="https://github.com/EnyaBu/Assembly-Snake-Game" target="_blank" class="project-link">
         <div class="project-box">
           <div class="project-description">
             <h2>Snake Game Recreation</h2>
             <p>
-              During my time at IG, I recreated the classic Snake game in
-              easy68k assembly. Feel free to clone it and give it a try!
+              During my internship at Iron Galaxy Studios, I recreated the
+              classic Snake game in easy68k assembly language. This low-level
+              implementation required managing memory directly, implementing
+              game loop logic, and handling real-time user input processing.
+              The project demonstrates understanding of fundamental computer
+              architecture and systems programming. Feel free to clone it and
+              give it a try!
             </p>
           </div>
           <div class="project-image">
@@ -76,19 +82,20 @@
         </div>
       </a>
 
-      <a
-        href="https://apps.apple.com/us/app/arrowz-notes/id6740894328"
-        target="_blank"
-        class="project-link"
-      >
+      <a href="https://apps.apple.com/us/app/arrowz-notes/id6740894328" target="_blank" class="project-link">
         <div class="project-box">
           <div class="project-description">
             <h2>Arrowz Notes App</h2>
             <p>
-              I was a founding technical lead for a student-run startup at
-              Vanderbilt. Our app promotes guided note-taking for mental health,
-              backed by research. I designed and built the interface using React
-              Native and Expo, and also contributed to product brainstorming.
+              As founding technical lead for this student-run startup at
+              Vanderbilt, I designed and built a guided note-taking
+              application aimed at supporting mental health through structured
+              reflection. Built with React Native and Expo, the app implements
+              research-backed intervention strategies and features an
+              intuitive interface. I contributed to product strategy,
+              brainstormed prototypes, and led technical development. This
+              project merges HCI research principles with real-world
+              application design.
             </p>
           </div>
           <div class="project-image">
@@ -96,70 +103,109 @@
           </div>
         </div>
       </a>
-    </div>
+    </section>
 
-    <div id="research" class="tab" style="display: none">
+    <section id="research" class="section research-section">
       <h1>My Research</h1>
+
       <p class="research-text">
-        My research interests include Human-Computer Interaction, Artificial
-        Intelligence, Machine Learning, Natural Language Processing, Deep
-        Learning, Neural Networks, Computer Vision, and Time Series Analysis.
-      </p>
-      <p class="research-text">
-        To pursue this path and better understand these fields, I worked in the
-        <a href="https://stirlab.org/" class="web-link"
-          >Socio-Technical Interaction Research Lab</a
-        >
-        under Dr. Pamela Wisniewski, studying HCI and how teens interact on
-        social media and how we can help keep them safe. I also worked at the
-        <a href="https://lab.vanderbilt.edu/rasl/" class="web-link"
-          >Robotics and Autonomous Systems Laboratory</a
-        >
-        under Dr. Nilanjan Sarkar, where I continued my HCI research and
-        explored Machine Learning.
+        My research focuses on Human-Computer Interaction, particularly examining how we can design AI systems to
+        support people's well-being and work.
       </p>
 
+      <h2 style="padding-top: 30px; font-size: 1.8rem; color: var(--cream);">Context Sharing in Large Language Models
+        (UCLA HCI Research)</h2>
+
+      <p class="research-text">
+        I am currently collaborating with UCLA's HCI Research group on a study examining user perceptions of context
+        sharing in large language model systems. Context sharing is the idea of pooling together user histories with an
+        LLM. This research investigates how we can balance collective intelligence and collaboration while maintaining
+        personal autonomy and privacy, especially as we move into an increasingly distributed world.
+      </p>
+
+      <p class="research-text">
+        Using Wizard-of-Oz methodology, I conduct user studies across multiple domains including resume assistance,
+        mental health support, and diet advice to understand when context sharing feels helpful versus invasive to
+        users. My research examines how different framings of data sharing, levels of transparency, and domain-specific
+        sensitivities shape user comfort and trust in AI systems. I am analyzing qualitative data from participant
+        interviews to identify design principles for context-aware AI that balances personalization benefits with
+        privacy concerns.
+        This work is being prepared for submission to CHI 2026 LBW.
+      </p>
+      <img src="Images/Community_Insight.png" alt="Research presentation" />
+      <img src="Images/Consent_Banner.png" alt="Research presentation" />
+
+
+      <h2 style="padding-top: 30px; font-size: 1.8rem; color: var(--cream);">Adolescent Online Safety Research (STIR
+        Lab)
+      </h2>
       <img src="Images/Vandy Research Fair.png" alt="Research fair" />
+
       <p class="research-text">
-        I helped with leading research sessions and participant interviews for our HCI project,
-        which evaluated the usability and effectiveness of safety tools and
-        nudges for minors on social media platforms. I recruited more than 20
-        teen participants for our study by contacting schools and leveraging
-        social media, and assisted in preparing and revising IRB protocols to
-        ensure ethical research practices involving minors. Here I am at the
-        Vanderbilt Undergraduate Research Fair!
+        At the <a href="https://stirlab.org/" class="web-link">Socio-Technical Interaction Research Lab</a> under Dr.
+        Pamela Wisniewski, I researched examining the usability and effectiveness of safety interventions for minors on
+        social media platforms.
       </p>
 
-      <img src="Images/HCI SVs.jpg" alt="Research fair" />
       <p class="research-text">
-        I presented my paper, "Enhancing Athletic Performance through AI: An
-        Iterative Prompt Engineering Approach for LLM-Based Coaching Feedback,"
-        at HCI International 2025! I also had the wonderful opportunity to serve
-        as a student volunteer and had an amazing experience in Sweden. In
-        addition to prompt engineering an LLM coach, I studied neural networks (specifically Siamese neural networks) to detect differences between a
-        professional's movements and those of a novice. I am also taking Foundations of Machine Learning in Fall 2025 to better understand supervised learning, unsupervised learning, and reinforcement learning. I will learn about linear and nonlinear regression, kernel methods, support vector machines, neural networks and deep learning methods, among many other things.
+        Online safety is a critical issue given teens' vulnerability to cyberbullying, privacy breaches, and exposure to
+        inappropriate content on social media. To improve digital safety, our project evaluated safety interventions
+        such as warning popups and content moderation features through a Wizard-of-Oz study using a simulated social
+        media platform. As a research assistant, I recruited teen participants,
+        facilitated sessions, and collected qualitative data on their decision-making processes. I helped identify three
+        effective nudge strategies in our results: (1) offering multiple safety options (flag, block, report), (2)
+        implementing sensitivity filters for offensive content, and (3) providing public visibility cues that make risky
+        behaviors apparent to others. These findings demonstrated how interface design can empower teens to make
+        informed safety decisions without restricting their autonomy.
       </p>
 
-      <h1 style="padding-top: 40px">Check Out My Works!</h1>
+      <h2 style="padding-top: 30px; font-size: 1.8rem; color: var(--cream);">AI Coaching Systems Research (RASL Lab)
+      </h2>
+      <img src="Images/HCI SVs.jpg" alt="Research presentation" />
 
-      <a
-        href="https://link.springer.com/chapter/10.1007/978-3-031-94171-9_22"
-        target="_blank"
-        class="project-link"
-      >
+      <p class="research-text">
+        At the <a href="https://lab.vanderbilt.edu/rasl/" class="web-link">Robotics and Autonomous Systems
+          Laboratory</a>
+        under Dr. Nilanjan Sarkar, I explored how large language models can provide personalized athletic coaching
+        feedback.
+        My first-author paper, "Enhancing Athletic Performance through AI: An Iterative Prompt Engineering Approach for
+        LLM-Based Coaching Feedback," presented at HCI International 2025, introduces a systematic methodology for
+        engineering effective prompts that generate contextually appropriate, actionable coaching guidance.
+      </p>
+
+      <p class="research-text">
+        This work combines technical system development with interpretive analysis of how users perceive and respond to
+        AI-generated feedback. I developed evaluation frameworks to assess feedback quality across dimensions of
+        specificity, actionability, and motivational tone. Through comparative user studies, I analyzed how
+        LLM-generated coaching compares to human expert feedback and identified key factors that influence user trust
+        and adherence.
+        Additionally, I investigated Siamese neural networks for detecting subtle differences in athletic movement
+        patterns, enabling more precise, data-driven coaching interventions.
+      </p>
+
+      <h2 style="padding-top: 40px; font-size: 1.8rem; color: var(--cream);">Publications & Writing Samples</h2>
+
+      <a href="https://link.springer.com/chapter/10.1007/978-3-031-94171-9_22" target="_blank" class="project-link">
         <div class="project-box">
           <div class="project-description">
-            <h2>
-              Enhancing Athletic Performance through AI: An Iterative Prompt
-              Engineering Approach for LLM-Based Coaching Feedback
-            </h2>
+            <h2>Enhancing Athletic Performance through AI: An Iterative Prompt Engineering Approach for LLM-Based
+              Coaching
+              Feedback</h2>
+            <p>Published in HCI International 2025 Proceedings. This first-author paper presents a systematic approach
+              to designing LLM-based coaching systems and evaluates their effectiveness through user studies. </p>
           </div>
           <div class="project-image">
-            <img src="Images/HCI_Paper.png" alt="Project Preview" />
+            <img src="Images/HCI_Paper.png" alt="HCI Paper" />
           </div>
         </div>
       </a>
 
+      <p class="research-text" style="padding-top: 20px;">
+        My research interests span Human-Computer Interaction, Artificial Intelligence, Machine Learning, Natural
+        Language Processing, Deep Learning, Neural Networks, Computer Vision, and Time Series Analysis.
+      </p>
+    </section>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
